@@ -1,0 +1,765 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oleo+Script+Swash+Caps:wght@400;700&family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Great+Vibes&family=Oleo+Script+Swash+Caps:wght@400;700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Cormorant+SC:wght@300;400;500;600;700&family=Great+Vibes&family=Oleo+Script+Swash+Caps:wght@400;700&family=Pacifico&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --pink: #e79ea7;
+  --green: #d7fecf;
+  --blue: #90c6b9;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -100;
+  right: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.header h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background: pink;
+  background-color: black;
+  font-size: 4rem;
+  background: #e79ea7;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #e79ea7 50%,
+    #00ff00 50%,
+    #90c6b9 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header a {
+  color: white;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-weight: lighter;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icons {
+  padding-right: 2rem;
+}
+span {
+  background: #e79ea7;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #e79ea7 0%,
+    #00ff00 50%,
+    #90c6b9 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.maintext {
+  width: 95%;
+  height: 95vh;
+  background: transparent;
+  position: absolute;
+  left: 2.4%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.leftside {
+  height: 100%;
+  width: 35%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  padding: 1rem;
+  font-family: "Pacifico", cursive;
+}
+.first {
+  width: 80%;
+  height: 10%;
+  background: transparent;
+  color: white;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.second {
+  width: 80%;
+  height: 8%;
+  background: black;
+  color: greenyellow;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  font-family: "Cormorant SC", serif;
+  padding-left: 20px;
+  cursor: pointer;
+}
+button {
+  width: 60%;
+  height: 4rem;
+  border-radius: 2rem;
+  background: black;
+  color: var(--pink);
+  text-align: center;
+  border: 2px solid white;
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  transition: 1s;
+}
+button:hover {
+  word-spacing: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-left: 2rem;
+}
+.rightside {
+  height: 100%;
+  width: 65%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.rightside img {
+  width: 70%;
+  height: 70%;
+}
+.container2 {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+.heading {
+  color: white;
+  font-size: 4rem;
+  padding-top: 4rem;
+  font-family: "Pacifico", cursive;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+}
+.underline {
+  background-color: white;
+  height: 0.5rem;
+  width: 35%;
+  position: relative;
+  border-radius: 2rem;
+  top: 10%;
+  left: 33%;
+}
+.men {
+  height: auto;
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.products {
+  width: 30rem;
+  height: 40rem;
+  color: white;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 6rem;
+  transition: 1s;
+}
+.top {
+  width: 100%;
+  height: 40%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+}
+.top img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.bottom {
+  width: 100%;
+  height: 45%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.bottom h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.bottom h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--green);
+}
+.products button {
+  width: 70%;
+  margin-bottom: 1rem;
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: pink;
+  word-spacing: 0.5rem;
+}
+
+.products .top .products1 {
+  width: 50%;
+  height: 100%;
+}
+.products .top .products2 {
+  width: 50%;
+  height: 100%;
+}
+.products .top .products3 {
+  width: 50%;
+  height: 100%;
+}
+.products .top .products4 {
+  width: 50%;
+  height: 100%;
+}
+.products .top .products5 {
+  width: 80%;
+  height: 120%;
+}
+.products .top .products6 {
+  width: 80%;
+  height: 125%;
+}
+.products .top .products7 {
+  width: 50%;
+  height: 120%;
+}
+.products .top .products8 {
+  width: 50%;
+  height: 100%;
+}
+.products .top .products9 {
+  width: 40%;
+  height: 100%;
+}
+.products .top .products10 {
+  width: 50%;
+  height: 100%;
+}
+.products .top .products11 {
+  width: 50%;
+  height: 100%;
+}
+.products .top .products12 {
+  width: 50%;
+  height: 100%;
+}
+
+.products:hover {
+  width: 33rem;
+  height: 45rem;
+  border: 2px solid greenyellow;
+  border-radius: 3rem;
+}
+
+.container3 {
+  width: 100%;
+  width: auto;
+  background-color: white;
+}
+.container3 .products .bottom h2 {
+  color: black;
+}
+
+.container3 .heading {
+  color: wheat;
+}
+.container3 .underline {
+  color: greenyellow;
+}
+.container3 .bottom h2 {
+  color: black;
+}
+
+.container3 .bottom h3 {
+  color: black;
+}
+.container3 .products:hover h2 {
+  cursor: pointer;
+  background-color: navajowhite;
+  border-radius: 20px;
+  border: 3px solid black;
+  color: black;
+  padding: 10px;
+}
+.container3 .underline {
+  background-color: green;
+  height: 0.5rem;
+  width: 35%;
+  position: relative;
+  border-radius: 2rem;
+  top: 10%;
+}
+
+.container4 {
+  width: 100%;
+  width: auto;
+  background-color: black;
+}
+.container4 .products .bottom h2 {
+  color: wheat;
+}
+
+.container4 .heading {
+  color: white;
+}
+.container4 .underline {
+  color: greenyellow;
+}
+.container4 .bottom h2 {
+  color: black;
+}
+
+.container4 .bottom h3 {
+  color: rgb(81, 167, 81);
+}
+.container4 .products:hover h2 {
+  cursor: pointer;
+  background-color: navajowhite;
+  border-radius: 20px;
+  border: 3px solid black;
+  color: black;
+  padding: 10px;
+}
+.container4 .underline {
+  background-color: green;
+  height: 0.5rem;
+  width: 35%;
+  position: relative;
+  border-radius: 2rem;
+  top: 10%;
+}
+
+.container5 {
+  width: 100%;
+  width: auto;
+  background-color: white;
+}
+.container5 .products .bottom h2 {
+  color: black;
+}
+
+.container5 .heading {
+  color: wheat;
+}
+.container5 .underline {
+  color: greenyellow;
+}
+.container5 .bottom h2 {
+  color: black;
+}
+
+.container5 .bottom h3 {
+  color: black;
+}
+.container5 .products:hover h2 {
+  cursor: pointer;
+  background-color: navajowhite;
+  border-radius: 20px;
+  border: 3px solid black;
+  color: black;
+  padding: 10px;
+}
+.container5 .underline {
+  background-color: green;
+  height: 0.5rem;
+  width: 35%;
+  position: relative;
+  border-radius: 2rem;
+  top: 10%;
+}
+
+.container6 {
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.offers2 {
+  background: white;
+  width: 85%;
+  height: 90rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.parts {
+  width: 35rem;
+  height: 30rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  gap: 10px;
+  border: 2px solid greenyellow;
+  border-radius: 20px;
+  transition: 1s;
+}
+.parts h1 {
+  font-size: 3rem;
+  font-size: "Oleo Script Swash Caps", cursive;
+}
+.parts p {
+  font-size: 1.5rem;
+  font-size: cormorant SC, serif;
+}
+.parts img {
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#two {
+  background-color: black;
+  border: 2px solid white;
+  color: wheat;
+}
+.parts button {
+  font-family: "Cookie", cursive;
+  word-spacing: 1rem;
+}
+.parts:hover {
+  height: 40rem;
+  height: 35rem;
+  cursor: pointer;
+}
+.heading1 {
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 65vh;
+  background: black;
+}
+.upper {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+.lower {
+  height: 20%;
+  width: 100%;
+  margin-top: 4px solid white;
+  display: flex;
+  border-top: 4px solid white;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.lower h2 {
+  color: wheat !important;
+  margin-right: 1.5rem;
+}
+#b {
+  width: 20%;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  margin: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.images {
+  width: 100%;
+  text-align: center;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.images img {
+  width: 15%;
+  height: 40%;
+  margin: 1rem;
+}
+.ficon {
+  height: 90%;
+  width: 100%;
+  color: white;
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.input {
+  height: 10%;
+  width: 90%;
+  background-color: wheat;
+  color: yellow;
+  border-radius: 20px;
+  border: none;
+  padding: 2rem;
+}
+
+.footer h1 {
+  background: black;
+  font-size: 2.5rem;
+
+  background: #e79ea7;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #e79ea7 50%,
+    #00ff00 50%,
+    #90c6b9 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#b p {
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+}
+
+.searchbar {
+  width: 30rem;
+  height: 5rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid white;
+  position: fixed;
+  background-color: black;
+  color: pink;
+  padding: 1rem;
+  top: 12%;
+  right: -95%; /*To make the Search Invisible and only visible onclick*/
+  z-index: 2000;
+  transition: 1s;
+}
+.searchbar h1 {
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+.searchbar.active {
+  right: 5%;
+}
+
+.favourite {
+  width: 25rem;
+  height: 15rem;
+  background-color: black;
+  color: var(--pink);
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid white;
+  position: fixed;
+  top: 12%;
+  right: -95%;
+  font-size: 1rem;
+  line-height: 4rem;
+  z-index: 2000000;
+  transition: 1s;
+}
+.favourite.active {
+  right: 5%;
+}
+
+.checkout {
+  height: 40rem;
+  width: 40rem;
+  background: black;
+  border: 2px solid white;
+  border-radius: 2rem;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  top: 12%;
+  right: -95%;
+  transition: 1s;
+}
+.checkbox h2 {
+  font-size: 2rem;
+  text-align: center;
+  width: 48%;
+  padding: 1rem;
+}
+.checkbox p {
+  font-size: 1.8rem;
+}
+.checkbox {
+  width: 90%;
+  height: 20%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  border: 2px solid white;
+  padding: 1rem;
+  color: white;
+  z-index: 100000;
+}
+.checkbox img {
+  width: 20%;
+  height: 100% !important;
+  border-radius: 5px;
+}
+
+.checkout.active {
+  right: 5%;
+}
+.login {
+  height: 30rem !important;
+  width: 30rem;
+  background-color: black !important;
+  color: white;
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  transition: 1s;
+  border-radius: 2rem;
+  align-items: center;
+  flex-direction: column;
+  position: fixed !important;
+  top: 12% !important;
+  right: -95% !important;
+  z-index: 10000;
+}
+.login.active {
+  right: 5% !important;
+}
+#username {
+  width: 90% !important;
+  height: 15% !important;
+  background: black;
+  color: white !important;
+  padding: 2rem !important;
+  border: 2px solid white !important;
+  border-radius: 2rem !important;
+  font-size: 2rem;
+}
+#password {
+  width: 90% !important;
+  height: 15% !important;
+  background: black;
+  color: white !important;
+  padding: 2rem !important;
+  border: 2px solid white !important;
+  border-radius: 2rem !important;
+  font-size: 2rem;
+}
+.login a {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  word-spacing: 0.7rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*This is the media Query Part*/
+
+@media (min-aspect-ratio: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video {
+    width: auto;
+    height: 100%;
+  }
+}
